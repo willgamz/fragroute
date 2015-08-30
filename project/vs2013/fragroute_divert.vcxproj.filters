@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\dnet">
+      <UniqueIdentifier>{4b0e7e17-1b5c-4e35-9d0b-4407df70a408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fragrouter">
+      <UniqueIdentifier>{541605a1-7ffd-43db-bba2-45b9f9071988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fragrouter">
+      <UniqueIdentifier>{de659e16-3218-4d66-bbde-25586029c8eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\argv.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bget.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\divert_tun-win32.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\event-win32.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fragroute.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\getopt.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_delay.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_drop.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_dup.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_echo.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_ip_chaff.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_ip_frag.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_ip_opt.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_ip_tos.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_ip_ttl.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_order.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_print.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_tcp_chaff.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_tcp_opt.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mod_tcp_seg.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pcaputil.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pkt.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\randutil.c">
+      <Filter>Source Files\fragrouter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\addr.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\addr-util.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\arp-win32.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\blob.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\err.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\eth-win32.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\intf-win32.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\ip6.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\ip-util.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\ip-win32.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\rand.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\route-win32.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\strlcat.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext\libdnet\src\strlcpy.c">
+      <Filter>Source Files\dnet</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\include\acconfig.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\argv.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\bget.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\confdefs.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\config.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\err.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\event.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\mod.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\pcaputil.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\pkt.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\queue.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\randutil.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\tun.h">
+      <Filter>Header Files\fragrouter</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{242C79FD-59F1-4DE0-8918-F9E77D2838D1}</ProjectGuid>
+    <RootNamespace>fragroute</RootNamespace>
+    <ProjectName>fragroute_divert</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\include;..\..\ext\winpcap\include;..\..\ext\libdnet\include;..\..\ext\divert\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;wpcap.lib;Packet.lib;Iphlpapi.lib;WinDivert.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\ext\winpcap\lib\x86;..\..\ext\divert\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\src\include;..\..\ext\winpcap\include;..\..\ext\libdnet\include;..\..\ext\divert\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\ext\winpcap\lib\x86;..\..\ext\divert\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;wpcap.lib;Packet.lib;Iphlpapi.lib;WinDivert.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ext\libdnet\src\addr-util.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\addr.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\arp-win32.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\blob.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\err.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\eth-win32.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\intf-win32.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\ip-util.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\ip-win32.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\ip6.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\rand.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\route-win32.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\strlcat.c" />
+    <ClCompile Include="..\..\ext\libdnet\src\strlcpy.c" />
+    <ClCompile Include="..\..\src\argv.c" />
+    <ClCompile Include="..\..\src\bget.c" />
+    <ClCompile Include="..\..\src\divert_tun-win32.c" />
+    <ClCompile Include="..\..\src\event-win32.c" />
+    <ClCompile Include="..\..\src\fragroute.c" />
+    <ClCompile Include="..\..\src\getopt.c" />
+    <ClCompile Include="..\..\src\mod.c" />
+    <ClCompile Include="..\..\src\mod_delay.c" />
+    <ClCompile Include="..\..\src\mod_drop.c" />
+    <ClCompile Include="..\..\src\mod_dup.c" />
+    <ClCompile Include="..\..\src\mod_echo.c" />
+    <ClCompile Include="..\..\src\mod_ip_chaff.c" />
+    <ClCompile Include="..\..\src\mod_ip_frag.c" />
+    <ClCompile Include="..\..\src\mod_ip_opt.c" />
+    <ClCompile Include="..\..\src\mod_ip_tos.c" />
+    <ClCompile Include="..\..\src\mod_ip_ttl.c" />
+    <ClCompile Include="..\..\src\mod_order.c" />
+    <ClCompile Include="..\..\src\mod_print.c" />
+    <ClCompile Include="..\..\src\mod_tcp_chaff.c" />
+    <ClCompile Include="..\..\src\mod_tcp_opt.c" />
+    <ClCompile Include="..\..\src\mod_tcp_seg.c" />
+    <ClCompile Include="..\..\src\pcaputil.c" />
+    <ClCompile Include="..\..\src\pkt.c" />
+    <ClCompile Include="..\..\src\randutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\include\acconfig.h" />
+    <ClInclude Include="..\..\src\include\argv.h" />
+    <ClInclude Include="..\..\src\include\bget.h" />
+    <ClInclude Include="..\..\src\include\confdefs.h" />
+    <ClInclude Include="..\..\src\include\config.h" />
+    <ClInclude Include="..\..\src\include\err.h" />
+    <ClInclude Include="..\..\src\include\event.h" />
+    <ClInclude Include="..\..\src\include\mod.h" />
+    <ClInclude Include="..\..\src\include\pcaputil.h" />
+    <ClInclude Include="..\..\src\include\pkt.h" />
+    <ClInclude Include="..\..\src\include\queue.h" />
+    <ClInclude Include="..\..\src\include\randutil.h" />
+    <ClInclude Include="..\..\src\include\tun.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
